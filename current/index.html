@@ -1,0 +1,308 @@
+<!DOCTYPE HTML>
+
+
+<html>
+	<head>
+		<title>Indie Go</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		
+
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper" >
+
+				<!-- Header -->
+					<header id="header" class="alt" style="overflow-x: scroll; overflow: hidden;">
+						<span class="logo"><img src="images/logo.svg" alt="" height="40%"/></span>
+						<h1>Indie Go</h1>
+						<p>Breaking barriers for Indie-vidual's talent by showing it to the world.<br /> 
+						<a  class="btn btn-default" id="myBtn"><span><b>Login</b></span></a><br />
+						<span><u>Join us! Enter the links below.</u></span><br />
+						<a href="registerArt.html">Artist's portal</a> | <a href="registerOrg.html">Organizer's portal</a>
+						<!-- <a href="#intro">Search our current Indie Artists!</a><br /> -->
+
+						
+
+						<!-- Login Modal -->
+						<div id="myModal" class="modal" >
+
+						  <!-- Modal content -->
+						  <div class="modal-content" style="width: 60%;">
+						    <div class="modal-header">
+						      <span class="close">&times;</span>
+						      <form name="login" onsubmit="validate()" method="post">
+							    
+
+							    	<br>
+							      <h2><b>Login with your IndieGo account</b></h2>
+							      <center>
+							      <input type="text" name="username" id="name" placeholder="Username" style="width: 60%;"/><br>
+									<input type="password" name="password" id="pass" placeholder="Password" style="width: 60%;"/><br >
+									<input type="button" value="Login" id="submit" onclick="validate()"/>
+								</center>
+							  </form>
+						    </div>
+						    <div class="modal-body">
+						    </div>
+						    <div class="modal-footer">
+						    </div>
+						  </div>
+
+
+
+						</div>
+
+
+					</header>
+					<br />
+					<br />
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active"><b>Search our current Indie Artists!</b></a></li>
+							<!-- <li><a href="#first">First Section</a></li> -->
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="m-scene">
+
+				<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+					<!-- <div class="searchheader">
+									  <h2><b>Search our current Indie Artists!</b></h1><br />
+									</div> -->
+					<div class="menu m-header scene_element scene_element--fadein" >
+						<div id="logo">
+							<span class="image1 avatar48"><img src="images/logo.svg" alt="" width="10%"/></span><br />
+							<h1 id="title">IndieGo</h1>
+							<p></p>
+						</div>
+						<div class="menu2 m-page scene_element scene_element--fadeinup">
+							<ul>
+								<input type="text" class="" placeholder="Search" style="width:170px; height:50px;"><br />
+								<form>
+									Sort by:<br>
+								  <input type="radio" name="gender">Popularity<br>
+								  <input type="radio" name="gender">Ranking<br>
+								  <input type="radio" name="gender">Number of works
+								</form>
+							</ul>
+							<ul>
+								Search by Talent:
+								<select style="width:170px; height:50px;">
+								  <option value="Musician">Music</option>
+								  <option value="Singer">Performing Arts</option>
+								  <option value="Band">Graphic arts</option>
+								  <option value="Comedians">Traditional Arts</option>
+								  <option value="Stage">Multimedia Arts</option>
+								  <option value="Directors">Technology</option>
+								  <option value="Photographers">Writers</option>
+								</select>
+							</ul>
+						</div>
+							</div>
+
+							<div class="search row m-page scene_element scene_element--fadeinup" style="overflow-y:scroll ; height:620px;">
+							  <!-- Cards of Artists-->
+							  <!-- <div class="row"> -->
+								<div class="card dropdown">
+									<center>
+								  <img src="images/logo.svg" alt="Avatar" style="width:60%">
+								</center>
+								  <div class="container">
+								    <h4><b>Juan Dela Cruz</b></h4> 
+								    <p><b>Musician - Solo</b><br>Hi! I'm Juan! Hello world!<br>
+								    <span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									</p>
+								  </div>
+								  <div class="dropdown-content">
+								     <h4><b>Juan Dela Cruz</b></h4> 
+								    <p><b>Musician - Solo</b><br>Hi! I'm Juan! Hello world!<br>
+								    <span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span><br>
+									
+									</p>
+								  </div>
+								</div>
+
+								<div class="card dropdown" >
+									<center>
+								  <img src="images/logo.svg" alt="Avatar" style="width:60%">
+								</center>
+								  <div class="container">
+								    <h4><b>AJ Mangondato</b></h4> 
+								    <p><b>Comedian</b><br>Rock and Roll to- ay teka di ako yun<br>
+								    <span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									</p>
+								  </div>
+								  <div class="dropdown-content">
+								    <h4><b>AJ Mangondato</b></h4> 
+								    <p><b>Comedian</b><br>Rock and Roll to- ay teka di ako yun<br>
+								    <span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									</p>
+								  </div>
+								</div>
+
+								<div class="card dropdown" >
+									<center>
+								  <img src="images/logo.svg" alt="Avatar" style="width:60%">
+								</center>
+								  <div class="container">
+								    <h4><b>Feliza Calderon</b></h4> 
+								    <p><b>Director</b><br>Want me take your action to pure bliss?<br>
+								    <span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									</p>
+								  </div>
+								   <div class="dropdown-content">
+								    <h4><b>Feliza Calderon</b></h4> 
+								    <p><b>Director</b><br>Want me take your action to pure bliss?<br>
+								    <span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									</p>
+								  </div>
+								</div>
+
+								<div class="card dropdown" >
+									<center>
+								  <img src="images/logo.svg" alt="Avatar" style="width:60%">
+								</center>
+								  <div class="container">
+								    <h4><b>Camille Casi</b></h4> 
+								    <p><b>Musician - Solo</b><br>Not available<br>
+								    <span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									</p>
+								  </div>
+								  <div class="dropdown-content">
+								    <h4><b>Camille Casi</b></h4> 
+								    <p><b>Musician - Solo</b><br>Not available<br>
+								    <span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									</p>
+								</div>
+								<!-- </div> -->
+
+
+
+							</div>
+
+									</div>
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<!-- <section id="first" class="main special">
+								<header class="major">
+									<h2>First Page</h2>
+								
+								<footer class="major">
+									<ul class="actions">
+ 
+									</ul>
+								</footer>
+							</section> -->
+
+
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+		<script src="assets/js/smoothTaste.js"></script>
+		<script src="assets/js/pageanimate.js"></script>
+			<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+    log.console("clicked!");
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+function validate() {
+    var username = document.getElementById("name").value;
+    var password = document.getElementById("pass").value;
+    if (username == "artist")
+    	{
+    		window.location = "ProfileHome.html"; 
+    	}
+    else if (username == "organizer")
+    	{
+    		window.location = "OrganizerHome.html"; 
+    	}
+    else
+    {
+    	alert("No User Found!");
+    }
+    
+
+
+}
+</script>
+	</body>
+</html>

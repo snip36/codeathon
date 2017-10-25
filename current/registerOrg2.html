@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+
+
+<html >
+	<head>
+		<title>Register|Organizer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		  <link rel="stylesheet" href="profile-assets/css/bootstrap-profilehome.css" />
+		  <link rel="stylesheet" href="assets/css/main.css" />
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script>
+function next() {
+    // window.location = "registerArt2.html"; 
+}
+</script>
+
+	</head>
+	<body>
+		
+		<div class="registerArt">
+			<center>
+			<h1>IndieGo Organizer Registration</h1>
+			<h2>Work Information</h2>
+			<h3>Please fill up the following field carefully and honestly</h3>
+			</center>
+			<form name="register2" method="post" style="margin-left: 20%;" >
+				<h4><b>Company name</b><input class="field"  type="text" name="cname" id="cname" placeholder="Contact number" style="width: 80%; height: 20%;"/></h4>
+				<h4><b>Company address</b><input class="field"  type="text" name="cadd" id="cadd" placeholder="Contact number" style="width: 80%; height: 20%;"/></h4>
+	      	<ul>
+	      	On what category does the enviornment of your company/group mainly belongs to?
+							<form>
+									Sort by:<br>
+								  <input type="radio" name="gender">Music<br>
+								  <input type="radio" name="gender">Performing Arts<br>
+								  <input type="radio" name="gender">Graphic arts<br>
+								  <input type="radio" name="gender">Traditional Arts<br>
+								  <input type="radio" name="gender">Multimedia Arts<br>
+								  <input type="radio" name="gender">Technology<br>
+								  <input type="radio" name="gender">Writers<br>
+								</form>
+			What "Specific" Category does your talent belongs to under your chosen category?
+			<input type="text" class="" placeholder="Search" style="width:50%; height:50px;"><br />
+			<h4><b>Contact Number</b><input class="field"  type="text" name="cnum" id="cnum" placeholder="Contact number" style="width: 80%; height: 20%;"/></h4>
+	      	<h4><b>Email</b><input   class="field" type="text" name="email" id="email" placeholder="email" style="width: 80%; height: 20%;"/></h4>
+	      	<b><a style="font-size: 27px;  float: left; margin-bottom: : auto;" href="registerOrg.html">Back</a> <a style="font-size: 27px;  float: right; margin-right: 25%" id="myBtn">Finish</a></b>
+	      	<br>
+	      	<br>
+			<!-- <a  href="registerArt2.html" style="font-size: 40px; margin-left: 75%;">Proceed</a> -->
+		</center>
+	  </form>
+					
+		</div>
+		
+		<!-- Login Modal -->
+						<div id="myModal" class="modal" >
+
+						  <!-- Modal content -->
+						  <div class="modal-content" style="width: 60%;">
+						    <div class="modal-header">
+						    	 <span class="close">&times;</span>
+						    	 <center>
+							    	<br>
+							      <h2><b>Welcome to IndieGo!</b></h2>
+							      <h4>Kindly wait for your email confirmation as we review your registration.<h4>
+							      	<h5>For the meantime, checkout our current Indie artists on our <a href="index.html">homepage!</a></h5>
+							      	<br>
+							      	<b><a style="font-size: 27px; margin-bottom: : auto;" href="index.html">Ok</a></b>
+							      	<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+								</center>
+							 
+						    </div>
+						    <div class="modal-body">
+						    </div>
+						    <div class="modal-footer">
+						    </div>
+						  </div>
+						
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+	<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+    log.console("clicked!");
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+	</body>
+
+	</html>
